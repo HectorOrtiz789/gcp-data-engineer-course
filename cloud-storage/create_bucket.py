@@ -8,7 +8,7 @@ def main():
 
     bucket_name = args.bucket_name
     print(f"bucket_name received: {bucket_name}")
-    storage_client = storage.Client(project="gcp-data-engineer-curso-485002")
+    storage_client = storage.Client(project="refined-magpie-485022-i8")
     bucket = storage_client.bucket(bucket_name)
     bucket.storage_class = "STANDARD"
     new_bucket = storage_client.create_bucket(bucket, location="us-central1")
